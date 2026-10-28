@@ -1,0 +1,364 @@
+:root {
+    --color-red: #9e080c;
+    --color-red-hover: #a30808;
+    --color-orange: #c67613;
+    --color-text: #000000;
+    --color-text-muted: #636363;
+    --color-footer: #0a141e;
+    --color-white: #ffffff;
+
+    --font-heading: 'Economica', sans-serif;
+    --font-body: 'Raleway', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-body);
+    color: var(--color-text);
+    background-color: var(--color-white);
+}
+
+img {
+    max-width: 100%;
+}
+
+/* ---------- Hero & Navigation ---------- */
+
+.hero {
+    position: relative;
+    height: 100vh;
+    min-height: 420px;
+    background-image: url(img/hero_bg.webp);
+    background-size: cover;
+    background-position: bottom;
+    color: var(--color-white);
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 2rem 1rem 0;
+}
+
+.navbar-logo img {
+    display: block;
+    width: 64px;
+    height: 64px;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list a {
+    color: var(--color-white);
+    text-decoration: none;
+    font-size: clamp(1rem, 2.5vmin, 1.4rem);
+}
+
+.nav-list a:hover,
+.nav-list a:focus-visible {
+    color: var(--color-red-hover);
+}
+
+.nav-list a:active {
+    font-weight: bold;
+}
+
+.button-tel {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.4rem 0.8rem;
+    background-color: var(--color-orange);
+    border: 2px outset var(--color-white);
+    border-radius: 5px;
+    transition: transform 0.2s ease;
+}
+
+.button-tel:hover,
+.button-tel:focus-visible {
+    transform: scale(1.05);
+}
+
+.nav-list .button-tel:hover,
+.nav-list .button-tel:focus-visible {
+    color: var(--color-white);
+}
+
+.button-tel img {
+    width: 24px;
+    height: 24px;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    font-size: clamp(1rem, 3vmin, 1.75rem);
+}
+
+.hero-content h1 {
+    margin: 0;
+    font-size: clamp(2.5rem, 10vmin, 7rem);
+}
+
+/* ---------- Sections ---------- */
+
+.section-title {
+    margin: 0;
+    padding: 2.5rem 1rem 1.5rem;
+    text-align: center;
+    color: var(--color-red);
+    font-family: var(--font-heading);
+    font-size: clamp(2.5rem, 10vmin, 5.5rem);
+}
+
+/* How to order */
+
+.order {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 0 1rem 2rem;
+}
+
+.order-step {
+    text-align: center;
+}
+
+.order-step img {
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+}
+
+.order-step p {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: clamp(1.25rem, 4vmin, 2rem);
+}
+
+/* Our menu */
+
+.menu {
+    padding-bottom: 2rem;
+    background-image: url(img/section_our_menu_bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.menu-item--reverse {
+    flex-direction: row-reverse;
+}
+
+.menu-item img {
+    width: 40%;
+    max-width: 250px;
+    height: auto;
+}
+
+.menu-item-text {
+    flex: 1;
+    max-width: 450px;
+}
+
+.menu-item h3 {
+    margin: 0 0 0.5rem;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: clamp(1.75rem, 5vmin, 2.75rem);
+}
+
+.price-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-size: clamp(1rem, 3vmin, 1.4rem);
+    color: var(--color-text-muted);
+}
+
+.price-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.25rem 0;
+}
+
+/* Location */
+
+.address {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0 1rem 1.5rem;
+    font-style: normal;
+    font-size: clamp(1rem, 4vmin, 1.75rem);
+    text-align: center;
+}
+
+.address img {
+    width: 1.5rem;
+    height: auto;
+}
+
+.map {
+    display: block;
+    width: 100%;
+    height: 450px;
+    border: 0;
+}
+
+/* ---------- Footer ---------- */
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+    background-color: var(--color-footer);
+}
+
+.footer-logo {
+    display: block;
+    height: 44px;
+    width: auto;
+}
+
+.social-icons {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.social-icons img {
+    display: block;
+    height: 40px;
+    width: auto;
+    transition: transform 0.2s ease;
+}
+
+.social-icons a:hover img,
+.social-icons a:focus-visible img {
+    transform: scale(1.1);
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 700px) {
+    .navbar {
+        justify-content: space-between;
+        padding: 1rem;
+    }
+
+    .navbar-logo img {
+        width: 48px;
+        height: 48px;
+    }
+
+    .nav-toggle {
+        display: block;
+        padding: 0.5rem;
+        background: none;
+        border: 0;
+        cursor: pointer;
+    }
+
+    .nav-toggle span {
+        display: block;
+        width: 28px;
+        height: 3px;
+        margin: 5px 0;
+        background-color: var(--color-white);
+        transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    .nav-toggle[aria-expanded="true"] span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .nav-toggle[aria-expanded="true"] span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .nav-toggle[aria-expanded="true"] span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        gap: 1.25rem;
+        width: 100%;
+        padding: 1.25rem 0;
+        background-color: rgba(10, 20, 30, 0.9);
+        border-radius: 5px;
+    }
+
+    .nav-list.is-open {
+        display: flex;
+    }
+
+    .menu-item,
+    .menu-item--reverse {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .menu-item img {
+        width: 70%;
+    }
+
+    .menu-item-text {
+        width: 100%;
+    }
+
+    .menu-item h3 {
+        text-align: center;
+    }
+
+    .map {
+        height: 300px;
+    }
+}
