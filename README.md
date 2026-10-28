@@ -1,22 +1,22 @@
 # Sakura Ramen
 
-Landingpage für ein fiktives Ramen-Restaurant.
+Responsive One-Page-Website für ein (fiktives) Ramen-Restaurant in München.
 
-## Bereiche
+## Inhalt
 
-- Menü mit den Ramen-Gerichten (z. B. Tonkotsu)
-- Bestellablauf in drei Schritten: Nudeln, Brühe und Toppings wählen
-- Standort und Kontakt
+- **Hero** mit Navigation und Telefon-Button (auf dem Handy als Hamburger-Menü)
+- **How to order** – drei Schritte zur eigenen Ramen
+- **Our menu** – Tonkotsu, Spicy Miso und Shio Ramen mit Preisen
+- **Find us at** – Adresse und eingebettete Google-Maps-Karte
+- **Footer** mit Social-Media-Links
 
-## Technologien
+## Technik
 
-HTML5 · CSS3
+- HTML5 mit semantischen Elementen (`header`, `main`, `section`, `footer`)
+- CSS in [style.css](style.css) mit CSS-Variablen, Flexbox, `clamp()` und Media Queries
+- Schriften: [Raleway](https://fonts.google.com/specimen/Raleway) und [Economica](https://fonts.google.com/specimen/Economica) über Google Fonts
+- Bilder als WebP
 
-## Projekt starten
+## Starten
 
-1. Repository klonen: `git clone https://github.com/KonstantinFenzlein/Sakura-Ramen.git`
-2. `index.html` im Browser öffnen.
-
-## Hinweis
-
-Restaurant, Adresse und Telefonnummer sind frei erfunden.
+`index.html` im Browser öffnen. Ein Build-Schritt ist nicht nötig.
